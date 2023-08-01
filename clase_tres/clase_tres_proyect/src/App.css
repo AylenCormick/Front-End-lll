@@ -1,0 +1,24 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0;
+  text-align: center;
+}
+
+.Header, .Footer {
+  background-color: rgb(116, 25, 25);
+  padding: 20px;
+  color:antiquewhite;
+}
+
+.Padre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Hijo {
+  width: 250px;
+  margin: 20px;
+  background-color: brown;
+}
