@@ -10,10 +10,7 @@ function Form({agregarCancion, mostrarMensajeError}) {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if((nombreCancion.length > 3 && nombreCancion.trim() == nombreCancion) && nombreAutor.length > 3) {
-            setNombreCancion(nombreCancion);
-            setNombreAutor(nombreAutor);
-
+        if((nombreCancion.length > 2 && nombreCancion.trim() == nombreCancion) && nombreAutor.length > 5) {
             agregarCancion({nombreCancion, nombreAutor, nombreAlbum})
             setNombreCancion("");
             setNombreAutor("");
