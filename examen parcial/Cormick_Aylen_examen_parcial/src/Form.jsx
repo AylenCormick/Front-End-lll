@@ -6,15 +6,11 @@ function Form({agregarCancion, mostrarMensajeError}) {
     const [nombreAutor, setNombreAutor] = useState("");
     const [nombreAlbum, setNombreAlbum] = useState("");
 
-
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if((nombreCancion.length > 3 && nombreCancion.trim() == nombreCancion) && nombreAutor.length > 3) {
-            setNombreCancion(nombreCancion);
-            setNombreAutor(nombreAutor);
-
-            agregarCancion({nombreCancion, nombreAutor, nombreAlbum})
+        if((nombreCancion.length > 2 && nombreCancion.trim() == nombreCancion) && nombreAutor.length > 5) {
+            agregarCancion({nombreCancion, nombreAutor, nombreAlbum});
             setNombreCancion("");
             setNombreAutor("");
             setNombreAlbum("");
